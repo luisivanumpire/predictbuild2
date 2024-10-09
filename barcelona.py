@@ -12,7 +12,7 @@ st.header("Predicción de Viviendas con IA")
 st.write("Ingrese las características de las viviendas para predecir el precio.")
 
 # Front 
-m2 = float(st.text_input("Metros Cuadrados", value="0"))
+m2 = float(st.text_input("Metros Cuadrados", value="100"))
 num_habitaciones = int(st.slider('Número de habitaciones :',0 ,10 ,1))
 ## Tipo
 df_tipo = pd.read_csv('tipo_vivienda.csv')
